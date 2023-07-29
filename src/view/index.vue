@@ -1,5 +1,7 @@
 <template>
-  <div class="index-page">
+  <div
+    class="index-page flex flex-col absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2"
+  >
     <div class="flex">
       <a href="https://vitejs.dev" target="_blank">
         <img src="/vite.svg" class="logo" alt="Vite logo" />
