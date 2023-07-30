@@ -38,8 +38,12 @@
   </div>
 </template>
 
-<script setup>
-const pluginList = [
+<script lang="ts" setup>
+interface option {
+  label: string
+  value: string
+}
+const pluginList: Array<option> = [
   {
     label: 'Axios',
     value: 'https://axios-http.com/',
@@ -58,9 +62,9 @@ const pluginList = [
   },
 ]
 
-const langList = [
+const langList: Array<option> = [
   {
-    label: 'JavaScript',
+    label: 'TypeScript',
     value: 'https://developer.mozilla.org/',
   },
   {
