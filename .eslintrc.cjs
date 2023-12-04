@@ -6,9 +6,10 @@ module.exports = {
   extends: ['eslint:recommended', 'plugin:vue/vue3-essential'],
   overrides: [
     {
-      files: ['src/view/index.vue', 'src/view/**/index.vue'], // 匹配views和二级目录中的index.vue
+      files: ['src/view/index.vue', 'src/view/**/index.vue', 'src/*'],
       rules: {
         'vue/multi-word-component-names': 'off',
+        'no-unused-vars': 'warn'
       }, //给上面匹配的文件指定规则
     },
   ],
